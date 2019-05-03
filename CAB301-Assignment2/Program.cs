@@ -45,7 +45,7 @@ namespace CAB301_Assignment2
     /// of the Brute Force Median algorithm
     /// </summary>
     [MinColumn, MaxColumn, HtmlExporter, CsvMeasurementsExporter, RPlotExporter]
-    [SimpleJob(RunStrategy.Monitoring, launchCount: 1, warmupCount: 0, targetCount: 5)]
+    [SimpleJob(RunStrategy.Monitoring, launchCount: 1, warmupCount: 0, targetCount: 100)]
     public class RunDualAlgorithm
     {
         #region Functional Testing
@@ -123,6 +123,102 @@ namespace CAB301_Assignment2
             yield return ReadCSV(test_data[0]);
             yield return ReadCSV(test_data[1]);
             yield return ReadCSV(test_data[2]);
+            yield return ReadCSV(test_data[3]);
+            yield return ReadCSV(test_data[4]);
+            yield return ReadCSV(test_data[5]);
+            yield return ReadCSV(test_data[6]);
+            yield return ReadCSV(test_data[7]);
+            yield return ReadCSV(test_data[8]);
+            yield return ReadCSV(test_data[9]);
+            yield return ReadCSV(test_data[10]);
+            yield return ReadCSV(test_data[11]);
+            yield return ReadCSV(test_data[12]);
+            yield return ReadCSV(test_data[13]);
+            yield return ReadCSV(test_data[14]);
+            yield return ReadCSV(test_data[15]);
+            yield return ReadCSV(test_data[16]);
+            yield return ReadCSV(test_data[17]);
+            yield return ReadCSV(test_data[18]);
+            yield return ReadCSV(test_data[19]);
+            yield return ReadCSV(test_data[20]);
+            yield return ReadCSV(test_data[21]);
+            yield return ReadCSV(test_data[22]);
+            yield return ReadCSV(test_data[23]);
+            yield return ReadCSV(test_data[24]);
+            yield return ReadCSV(test_data[25]);
+            yield return ReadCSV(test_data[26]);
+            yield return ReadCSV(test_data[27]);
+            yield return ReadCSV(test_data[28]);
+            yield return ReadCSV(test_data[29]);
+            yield return ReadCSV(test_data[30]);
+            yield return ReadCSV(test_data[31]);
+            yield return ReadCSV(test_data[32]);
+            yield return ReadCSV(test_data[33]);
+            yield return ReadCSV(test_data[34]);
+            yield return ReadCSV(test_data[35]);
+            yield return ReadCSV(test_data[36]);
+            yield return ReadCSV(test_data[37]);
+            yield return ReadCSV(test_data[38]);
+            yield return ReadCSV(test_data[39]);
+            yield return ReadCSV(test_data[40]);
+            yield return ReadCSV(test_data[41]);
+            yield return ReadCSV(test_data[42]);
+            yield return ReadCSV(test_data[43]);
+            yield return ReadCSV(test_data[44]);
+            yield return ReadCSV(test_data[45]);
+            yield return ReadCSV(test_data[46]);
+            yield return ReadCSV(test_data[47]);
+            yield return ReadCSV(test_data[48]);
+            yield return ReadCSV(test_data[50]);
+            yield return ReadCSV(test_data[51]);
+            yield return ReadCSV(test_data[52]);
+            yield return ReadCSV(test_data[53]);
+            yield return ReadCSV(test_data[54]);
+            yield return ReadCSV(test_data[55]);
+            yield return ReadCSV(test_data[56]);
+            yield return ReadCSV(test_data[57]);
+            yield return ReadCSV(test_data[58]);
+            yield return ReadCSV(test_data[59]);
+            yield return ReadCSV(test_data[60]);
+            yield return ReadCSV(test_data[61]);
+            yield return ReadCSV(test_data[62]);
+            yield return ReadCSV(test_data[63]);
+            yield return ReadCSV(test_data[64]);
+            yield return ReadCSV(test_data[65]);
+            yield return ReadCSV(test_data[66]);
+            yield return ReadCSV(test_data[67]);
+            yield return ReadCSV(test_data[68]);
+            yield return ReadCSV(test_data[69]);
+            yield return ReadCSV(test_data[70]);
+            yield return ReadCSV(test_data[71]);
+            yield return ReadCSV(test_data[72]);
+            yield return ReadCSV(test_data[73]);
+            yield return ReadCSV(test_data[74]);
+            yield return ReadCSV(test_data[75]);
+            yield return ReadCSV(test_data[76]);
+            yield return ReadCSV(test_data[77]);
+            yield return ReadCSV(test_data[78]);
+            yield return ReadCSV(test_data[79]);
+            yield return ReadCSV(test_data[80]);
+            yield return ReadCSV(test_data[81]);
+            yield return ReadCSV(test_data[82]);
+            yield return ReadCSV(test_data[83]);
+            yield return ReadCSV(test_data[84]);
+            yield return ReadCSV(test_data[85]);
+            yield return ReadCSV(test_data[86]);
+            yield return ReadCSV(test_data[87]);
+            yield return ReadCSV(test_data[88]);
+            yield return ReadCSV(test_data[89]);
+            yield return ReadCSV(test_data[90]);
+            yield return ReadCSV(test_data[91]);
+            yield return ReadCSV(test_data[92]);
+            yield return ReadCSV(test_data[93]);
+            yield return ReadCSV(test_data[94]);
+            yield return ReadCSV(test_data[95]);
+            yield return ReadCSV(test_data[96]);
+            yield return ReadCSV(test_data[97]);
+            yield return ReadCSV(test_data[98]);
+            yield return ReadCSV(test_data[99]);
         }
 
 
@@ -131,16 +227,106 @@ namespace CAB301_Assignment2
         /// </summary>
         public string[] test_data = new string[]
         {
+            "C:\\Users\\seano\\Desktop\\Test_Data\\1k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\2k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\3k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\4k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\5k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\6k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\7k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\8k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\9k.csv",
             "C:\\Users\\seano\\Desktop\\Test_Data\\10k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\11k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\12k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\13k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\14k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\15k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\16k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\17k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\18k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\19k.csv",
             "C:\\Users\\seano\\Desktop\\Test_Data\\20k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\21k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\22k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\23k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\24k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\25k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\26k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\27k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\28k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\29k.csv",
             "C:\\Users\\seano\\Desktop\\Test_Data\\30k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\31k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\32k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\33k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\34k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\35k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\36k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\37k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\38k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\39k.csv",
             "C:\\Users\\seano\\Desktop\\Test_Data\\40k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\41k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\42k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\43k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\44k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\45k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\46k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\47k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\48k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\49k.csv",
             "C:\\Users\\seano\\Desktop\\Test_Data\\50k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\51k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\52k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\53k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\54k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\55k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\56k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\57k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\58k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\59k.csv",
             "C:\\Users\\seano\\Desktop\\Test_Data\\60k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\61k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\62k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\63k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\64k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\65k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\66k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\67k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\68k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\69k.csv",
             "C:\\Users\\seano\\Desktop\\Test_Data\\70k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\71k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\72k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\73k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\74k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\75k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\76k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\77k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\78k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\79k.csv",
             "C:\\Users\\seano\\Desktop\\Test_Data\\80k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\81k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\82k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\83k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\84k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\85k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\86k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\87k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\88k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\89k.csv",
             "C:\\Users\\seano\\Desktop\\Test_Data\\90k.csv",
-            "C:\\Users\\seano\\Desktop\\Test_Data\\100k.csv"
+            "C:\\Users\\seano\\Desktop\\Test_Data\\91k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\92k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\93k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\94k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\95k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\96k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\97k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\98k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\99k.csv",
+            "C:\\Users\\seano\\Desktop\\Test_Data\\100k.csv",
         };
 
         /// <summary>
@@ -159,8 +345,7 @@ namespace CAB301_Assignment2
             {
                 for (int j = 0; j <= A.Length - 1; j++)
                 {
-                    basicOps++;
-                    if (i!=j && Math.Abs(A[i] - A[j]) < dmin)
+                    if ((++basicOps < 0) && i !=j && Math.Abs(A[i] - A[j]) < dmin)
                     {
                         dmin = Math.Abs(A[i] - A[j]);
                     }
@@ -187,9 +372,8 @@ namespace CAB301_Assignment2
             {
                 for (int j = i + 1; j <= A.Length - 1; j++)
                 {
-                    basicOps++;
                     double temp = Math.Abs(A[i] - A[j]);
-                    if (temp < dmin)
+                    if ((++basicOps < 0) && temp < dmin)
                     {
                         dmin = temp;
                     }
