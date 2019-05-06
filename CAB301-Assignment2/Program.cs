@@ -45,7 +45,7 @@ namespace CAB301_Assignment2
     /// of the Brute Force Median algorithm
     /// </summary>
     [MinColumn, MaxColumn, HtmlExporter, CsvMeasurementsExporter, RPlotExporter]
-    [SimpleJob(RunStrategy.Monitoring, launchCount: 1, warmupCount: 0, targetCount: 100)]
+    [SimpleJob(RunStrategy.Monitoring, launchCount: 1, warmupCount: 0, targetCount: 1)]
     public class RunDualAlgorithm
     {
         #region Functional Testing
@@ -169,6 +169,7 @@ namespace CAB301_Assignment2
             yield return ReadCSV(test_data[46]);
             yield return ReadCSV(test_data[47]);
             yield return ReadCSV(test_data[48]);
+            yield return ReadCSV(test_data[49]);
             yield return ReadCSV(test_data[50]);
             yield return ReadCSV(test_data[51]);
             yield return ReadCSV(test_data[52]);
@@ -339,13 +340,13 @@ namespace CAB301_Assignment2
         [ArgumentsSource(nameof(Data))]
         public double MinDistance(int[] A)
         {
-            int basicOps = 0;
+            ulong basicOps = 0;
             double dmin = double.PositiveInfinity;
             for (int i = 0; i <= A.Length - 1; i++)
             {
                 for (int j = 0; j <= A.Length - 1; j++)
                 {
-                    if ((++basicOps < 0) && i !=j && Math.Abs(A[i] - A[j]) < dmin)
+                    if ((++basicOps > 0) && i !=j && Math.Abs(A[i] - A[j]) < dmin)
                     {
                         dmin = Math.Abs(A[i] - A[j]);
                     }
@@ -366,14 +367,14 @@ namespace CAB301_Assignment2
         [ArgumentsSource(nameof(Data))]
         public double MinDistance2(int[] A)
         {
-            int basicOps = 0;
+            ulong basicOps = 0;
             double dmin = double.PositiveInfinity;
             for (int i = 0; i <= A.Length - 1; i++)
             {
                 for (int j = i + 1; j <= A.Length - 1; j++)
                 {
                     double temp = Math.Abs(A[i] - A[j]);
-                    if ((++basicOps < 0) && temp < dmin)
+                    if ((++basicOps > 0) && temp < dmin)
                     {
                         dmin = temp;
                     }
